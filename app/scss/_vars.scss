@@ -1,0 +1,34 @@
+// Colors
+$primary-color: #121212;
+$secondary-color: #515151;
+$accent-color: #4c65ad;
+$subtitle-color: #151515;
+$btn-color: #1566b3;
+$white: #fff;
+$status-color: #01c839;
+
+// Main font values
+%title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 72 / 65 * 100%;
+    color: $title-color;
+}
+
+%subtitle {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42 / 32 * 100%;
+}
+
+%main-text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28 / 25 * 100%;
+}
+
+%desc-text {
+    font-weight: 300;
+    font-size: 16px;
+}
