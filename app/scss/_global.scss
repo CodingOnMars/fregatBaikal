@@ -1,6 +1,17 @@
-.body {
+html,
+body {
+    height: 100%;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
     color: $primary-color;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .container {
@@ -12,9 +23,23 @@
     }
 }
 
+.nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24 / 20 * 100%;
+    color: $white;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
 .btn-more {
     padding: 20px 62px;
-    @extend %main-font;
     font-weight: 500;
     font-size: 14px;
     line-height: 17 / 14 *100%;
@@ -34,7 +59,6 @@
 
 .btn-book {
     padding: 22px 70px;
-    @extend %main-font;
     font-weight: 500;
     font-size: 20px;
     line-height: 25 / 20 * 100%;
