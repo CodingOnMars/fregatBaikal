@@ -4,16 +4,24 @@ $secondary-color: #515151;
 $accent-color: #4c65ad;
 $subtitle-color: #151515;
 $btn-color: #1566b3;
+$btnMore-hover: #3862de;
+$btnBook-hover: #2284e1;
 $white: #fff;
 $status-color: #01c839;
+$nav-color: #004281;
 
 // Main font values
+
+%main-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
 %title {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 65px;
     line-height: 72 / 65 * 100%;
-    color: $title-color;
+    color: $accent-color;
 }
 
 %subtitle {
