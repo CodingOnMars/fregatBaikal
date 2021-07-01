@@ -8,11 +8,25 @@ body {
     color: $primary-color;
 }
 
-.wrapper {
+.main-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
+
+.cover-wrapper {
+    background: $secondary-color;
+    background-image: url(../images/cover-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920 800;
+}
+
+.container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 
 .container {
     max-width: 1550px;
@@ -28,6 +42,13 @@ body {
     font-size: 18px;
     line-height: 24 / 20 * 100%;
     color: $white;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 200px;
+    line-height: 273 / 200 * 100%;
+    color: $mainTitle-color;
 }
 
 .main {

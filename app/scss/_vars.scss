@@ -1,4 +1,4 @@
-// Colors
+// Main colors
 $primary-color: #121212;
 $secondary-color: #515151;
 $accent-color: #4c65ad;
@@ -9,6 +9,13 @@ $btnBook-hover: #2284e1;
 $white: #fff;
 $status-color: #01c839;
 $nav-color: #004281;
+$mainTitle-color: #eeeeee;
+
+// Secondary colors 
+$shadow-color: rgba(0, 0, 0, 0.54);
+$shadow-color-deep: rgba(0, 0, 0, 0.8);
+$silver-color: #bebebe;
+$dusty-gray: #9b9b9b;
 
 // Main font values
 
@@ -39,4 +46,5 @@ $nav-color: #004281;
 %desc-text {
     font-weight: 300;
     font-size: 16px;
+    line-height: 110%;
 }
