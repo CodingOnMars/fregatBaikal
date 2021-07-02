@@ -55,6 +55,32 @@ body {
     flex: 1 0 auto;
 }
 
+.title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 72 / 65 * 100%;
+    color: $accent-color;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42 / 32 * 100%;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28 / 25 * 100%;
+}
+
+.desc-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+}
+
 .footer {
     flex: 0 0 auto;
 }

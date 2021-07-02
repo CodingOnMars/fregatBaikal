@@ -1,0 +1,145 @@
+.benefits {
+    &__container {
+        padding-top: 70px;
+        padding-bottom: 200px;
+    }
+
+    &__number {
+        position: relative;
+
+        &::before {
+            content: "6";
+            position: absolute;
+            top: 41px;
+            left: -100px;
+            font-size: 170px;
+            line-height: 72 / 170 * 100%;
+        }
+    }
+
+    &__title {
+        max-width: 1150px;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 60px;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 730px;
+        padding-left: 200px;
+    }
+
+    &__item--picture {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 185px;
+            height: 200px;
+        }
+
+        &-1 {
+            &::before {
+                content: url(../images/benefits-1.png);
+            }
+        }
+
+        &-2 {
+            &::before {
+                content: url(../images/benefits-2.png);
+            }
+        }
+
+        &-3 {
+            &::before {
+                content: url(../images/benefits-3.png);
+            }
+        }
+
+        &-4 {
+            &::before {
+                content: url(../images/benefits-4.png);
+            }
+        }
+
+        &-5 {
+            &::before {
+                content: url(../images/benefits-5.png);
+            }
+        }
+
+        &-6 {
+            &::before {
+                content: url(../images/benefits-6.png);
+            }
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 19px;
+        padding-left: 55px;
+    }
+
+    &__icon {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -55px;
+        }
+    }
+
+    &__icon--user {
+        &::before {
+            content: url(../images/benefits-icon-1.svg);
+        }
+    }
+
+    &__icon--sun {
+        &::before {
+            content: url(../images/benefits-icon-2.svg);
+        }
+    }
+
+    &__icon--compass {
+        &::before {
+            content: url(../images/benefits-icon-3.svg);
+        }
+    }
+
+    &__icon--wave {
+        &::before {
+            content: url(../images/benefits-icon-4.svg);
+        }
+    }
+
+    &__icon--building {
+        &::before {
+            content: url(../images/benefits-icon-5.svg);
+        }
+    }
+
+    &__icon--umbrella {
+        &::before {
+            content: url(../images/benefits-icon-6.svg);
+        }
+    }
+
+
+    &__text {
+        max-width: 465px;
+    }
+
+}
