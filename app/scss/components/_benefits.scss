@@ -88,7 +88,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 19px;
-        padding-left: 55px;
+        padding-left: 47px;
     }
 
     &__icon {
@@ -97,7 +97,7 @@
         &::before {
             position: absolute;
             top: 0;
-            left: -55px;
+            left: -47px;
         }
     }
 
