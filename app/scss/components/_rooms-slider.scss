@@ -1,0 +1,124 @@
+.rooms-slider {
+    display: flex;
+    gap: 21px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        background: $white;
+    }
+
+    &__pictures {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "Топ продаж";
+            top: 0;
+            right: 0;
+            width: 190px;
+            height: 50px;
+            padding-top: 10px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            text-align: center;
+            color: $white;
+            background: $sunglow;
+        }
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        max-width: 430px;
+        padding-left: 38px;
+        padding-right: 7px;
+        padding-bottom: 12px;
+    }
+
+    &__title {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    &__desc {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 38px;
+
+    &__item {
+        position: relative;
+        padding-left: 18px;
+
+        &::before {
+            position: absolute;
+            content: url(../images/grey-checkmark.svg);
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.info__item,
+.prices__item {
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.prices {
+    position: relative;
+    margin-left: auto;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 80px;
+        top: 0;
+        left: -10px;
+        background: $silver-color;
+    }
+
+    &__number {
+        font-weight: 500;
+    }
+}
+
+
+.availability {
+    display: flex;
+
+    &__status {
+        margin: 20px 0 15px 23px;
+        font-size: 12px;
+        line-height: 14 / 12 * 100%;
+    }
+
+    &__check {
+        position: relative;
+        padding-left: 15px;
+        font-size: 16px;
+        line-height: 20 / 16 * 100%;
+        color: $status-color;
+
+        &::before {
+            position: absolute;
+            content: url(../images/green-checkmark.svg);
+            top: 0;
+            left: 0;
+        }
+    }
+}

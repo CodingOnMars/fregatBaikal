@@ -53,6 +53,7 @@ body {
 
 .main {
     flex: 1 0 auto;
+    background: $mainBg-color;
 }
 
 .title {
@@ -96,10 +97,11 @@ body {
     opacity: 0.8;
 
     @media (min-width: 900px) {
-        transition: font-weight 0.1s ease;
+        transition: border 0.1s ease, color 0.1s ease-in-out;
 
         &:hover {
-            font-weight: 600;
+            border: 2px dotted $accent-color;
+            color: $btn-color;
         }
     }
 }
