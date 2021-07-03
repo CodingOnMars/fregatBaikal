@@ -110,6 +110,18 @@
         color: $white;
     }
 
+    &__link--icon {
+        position: relative;
+        padding-left: 10px;
+
+        &::before {
+            position: absolute;
+            content: url(../images/phone-call.svg);
+            top: -2px;
+            left: -12px;
+        }
+    }
+
     &__link--uppercase {
         font-size: 16px;
         line-height: 20 / 16 * 100%;
