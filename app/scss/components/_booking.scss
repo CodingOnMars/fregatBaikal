@@ -1,0 +1,103 @@
+.booking {
+    padding-top: 100px;
+    padding-bottom: 107px;
+    background: $booking-bg;
+
+    &__list {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        color: $primary-color;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 85px;
+        }
+    }
+
+    &__item--active {
+        font-weight: 500;
+        color: $accent-color;
+    }
+
+    &__btn {
+        margin-top: 53px;
+    }
+}
+
+.form {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 51px;
+        }
+    }
+
+    &__dropdown {
+        display: flex;
+    }
+
+    &__date {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    &__input-date,
+    &__input,
+    &__select,
+    &__area {
+        font-size: 18px;
+        line-height: 22 / 18 * 100%;
+        border: 2px solid $dusty-gray;
+    }
+
+    &__input,
+    &__select {
+        height: 64px;
+        margin-bottom: 30px;
+    }
+
+    &__select {
+        width: 100%;
+        padding-left: 24px;
+    }
+
+    &__input {
+        width: 467px;
+        padding-left: 24px;
+        padding-right: 44px;
+    }
+
+    &__input-date {
+        width: 100%;
+        width: 221px;
+        height: 64px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+
+    }
+
+    &__area {
+        width: 100%;
+        height: 100%;
+        max-height: 198px;
+        resize: none;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+}
