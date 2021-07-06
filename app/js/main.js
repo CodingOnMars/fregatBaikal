@@ -1,4 +1,7 @@
-// Display today date in input date
-// TO DO: find a proper solution for both input fields
-const currentDate = document.querySelector('.form__input-date');
-currentDate.valueAsNumber = Date.now() - new Date().getTimezoneOffset() * 60000;
+// Display today's date in input field
+document.querySelector('.date-in').valueAsDate = new Date();
+
+// Add 7 days to current date in input field
+document.querySelector('.date-out').valueAsDate = new Date(
+	Date.now() + 7 * 86400000
+);
