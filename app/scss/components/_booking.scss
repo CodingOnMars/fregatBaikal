@@ -1,0 +1,163 @@
+.booking {
+    padding-top: 100px;
+    padding-bottom: 107px;
+    background: $booking-bg;
+
+    &__list {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        color: $primary-color;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 85px;
+        }
+    }
+
+    &__item--active {
+        font-weight: 500;
+        color: $accent-color;
+    }
+
+    &__number {
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid $accent-color;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24 / 20 * 100%;
+        color: $subtitle-color;
+
+        &::before,
+        &::after {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+        }
+
+        &::before {
+            padding-left: 8px;
+        }
+
+        &::after {
+            padding-right: 8px;
+        }
+    }
+
+    &__btn {
+        margin-top: 53px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 51px;
+        }
+    }
+
+    &__dates {
+        display: flex;
+    }
+
+    &__date {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    &__dropdown,
+    &__group {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 65px;
+            left: 8px;
+        }
+    }
+
+    &__dropdown {
+        &::before {
+            content: url(../images/booking-house.svg);
+        }
+    }
+
+    &__group {
+        &::before {
+            content: url(../images/booking-user.svg);
+            z-index: 1;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    &__input-date,
+    &__input,
+    &__select,
+    &__area {
+        font-size: 18px;
+        line-height: 22 / 18 * 100%;
+        border: 2px solid $dusty-gray;
+    }
+
+    &__input,
+    &__select {
+        height: 64px;
+        margin-bottom: 30px;
+    }
+
+    &__select {
+        width: 100%;
+        padding-left: 24px;
+    }
+
+    &__input {
+        position: relative;
+        width: 467px;
+        padding-left: 26px;
+        padding-right: 24px;
+
+        &::before {
+            position: absolute;
+            content: url(../images/booking-user.svg);
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__input-date {
+        width: 100%;
+        width: 221px;
+        height: 64px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+
+    }
+
+    &__area {
+        width: 100%;
+        height: 100%;
+        max-height: 198px;
+        resize: none;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+}

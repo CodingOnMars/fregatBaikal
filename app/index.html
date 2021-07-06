@@ -154,7 +154,7 @@
                                 <h2 class="review__title">Отзывы отдыхающих</h2>
                                 <p class="review__text">
                                     Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда все великолепно:
-                                    радушный прием, отличное питание, уютное пребывание и&nbsp;блогоустроенный пляж.
+                                    радушный прием, отличное питание, уютное пребывание и&nbsp;благоустроенный пляж.
                                     Хотим отметить вечернее освещение базы и&nbsp;особенно пляжа, которое помогает
                                     впитывать энергетику Байкала.
                                 </p>
@@ -405,6 +405,90 @@
                     </div>
                 </div>
             </section>
+
+            <section class="booking">
+                <div class="container">
+
+                    <ul class="booking__list text">
+                        <li class="booking__item booking__item--active">
+                            <span class="booking__number">1</span> Размещение
+                        </li>
+                        <li class="booking__item">
+                            <span class="booking__number">2</span>
+                            Бронирование
+                        </li>
+                        <li class="booking__item">
+                            <span class="booking__number">3</span>
+                            Оплата
+                        </li>
+                    </ul>
+
+                    <h2 class="booking__title title">Забронировать номер</h2>
+
+                    <form class="booking__form form">
+                        <div class="form__item">
+                            <div class="form__dates">
+                                <div class="form__date">
+                                    <label class="form__title text">Дата заезда</label>
+                                    <input class="form__input-date date-in" type="date">
+                                </div>
+                                <div class="form__date">
+                                    <label class="form__title text">Дата отъезда</label>
+                                    <input class="form__input-date date-out" type="date">
+                                </div>
+                            </div>
+
+                            <div class="form__dropdown">
+                                <label class="form__title text">Вид жилья</label>
+                                <select class="form__select">
+                                    <option class="form__option" value="Гостиничный корпус" selected="selected">
+                                        Гостиничный
+                                        корпус</option>
+                                    <option class="form__option" value="Коттеджи (Отдельные дома)">
+                                        Коттеджи
+                                        (Отдельные дома)</option>
+                                </select>
+                            </div>
+
+                            <div class="form__dropdown">
+                                <label class="form__title text">Вид номера</label>
+                                <select class="form__select">
+                                    <option class="form__option" value="Номер 1-Категории “Стандарт”"
+                                        selected="selected">
+                                        Номер 1-Категории “Стандарт”
+                                    </option>
+                                    <option class="form__option" value="Номер 2-Категории “Премьер”">
+                                        Номер 2-Категории “Премьер”
+                                    </option>
+                                    <option class="form__option" value="Номер 3-Категории “Люкс”">
+                                        Номер 3-Категории “Люкс”
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__title text">Количество человек</label>
+                                <input class="form__input" type="number" placeholder="Введите количество отдыхающих">
+                            </div>
+
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__title text">Имя</label>
+                            <input class="form__input" type="text" placeholder="Введите ваше имя">
+
+                            <label class="form__title text">Телефон</label>
+                            <input class="form__input" type="tel" placeholder="Введите ваш номер телефона">
+
+                            <label class="form__title text">Комментарий</label>
+                            <textarea class="form__area" placeholder="Введите ваш комментарий"></textarea>
+                        </div>
+                    </form>
+
+                    <button class="btn-book btn-reset booking__btn">Забронировать номер</button>
+                </div>
+            </section>
+
         </main>
 
 
