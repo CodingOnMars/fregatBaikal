@@ -1,5 +1,5 @@
 .booking {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 107px;
     background: $booking-bg;
 
@@ -114,6 +114,7 @@
         font-size: 18px;
         line-height: 22 / 18 * 100%;
         border: 2px solid $dusty-gray;
+        border-radius: 5px;
     }
 
     &__input,
