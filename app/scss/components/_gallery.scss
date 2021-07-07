@@ -1,0 +1,40 @@
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    &__title {
+        max-width: 743px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(351px, 1fr));
+        gap: 30px;
+        place-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__item--large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    &__item--medium {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    &__img {
+        border-radius: 9px;
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.25);
+        box-shadow: 8px 8px 22px rgba(0, 0, 0, 0.25);
+    }
+
+    &__link {
+        margin-top: 80px;
+        text-align: center;
+    }
+}
