@@ -1,0 +1,24 @@
+.cashback__container>* {
+    z-index: 100;
+}
+
+.cashback {
+    &__container {
+        margin-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 145px;
+        // width: 100%;
+        text-align: center;
+        overflow: hidden;
+        background: $alice-blue;
+        background: linear-gradient(rgba(73, 187, 255, 0.6), rgba(239, 249, 255, 0.6)), url(../images/world-map.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -46,8 +46,8 @@ body {
 
 .main-title {
     font-family: 'Playfair Display', serif;
-    font-size: 200px;
-    line-height: 273 / 200 * 100%;
+    font-size: 12.5rem;
+    line-height: 17 / 12 * 100%;
     color: $mainTitle-color;
 }
 
@@ -80,10 +80,6 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 110%;
-}
-
-.footer {
-    flex: 0 0 auto;
 }
 
 .btn-more {
@@ -122,4 +118,21 @@ body {
     &:hover {
         background: $btnBook-hover;
     }
+}
+
+.discount {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 12 / 8 * 100%;
+    background: linear-gradient(109.98deg, #1577E4 6.71%, #00D583 105.52%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    flex: 0 0 auto;
 }
