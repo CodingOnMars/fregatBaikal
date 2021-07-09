@@ -37,6 +37,40 @@
     display: flex;
     flex-direction: column;
 
+    &__box {
+        position: relative;
+        padding-left: 50px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+        }
+
+        &--phone {
+            &::before {
+                content: url(../images/grey-phone.svg);
+            }
+        }
+
+        &--mail {
+            &::before {
+                content: url(../images/grey-mail.svg);
+            }
+        }
+
+        &--office {
+            &::before {
+                content: url(../images/grey-pin.svg);
+            }
+        }
+
+        &--base {
+            &::before {
+                content: url(../images/grey-compass.svg);
+            }
+        }
+    }
+
     &__subtitle {
         margin-bottom: 10px;
         color: $dusty-gray;
@@ -56,7 +90,7 @@
     }
 }
 
-.questions {
+.contact-social {
     margin-top: 60px;
 
     &__title {
