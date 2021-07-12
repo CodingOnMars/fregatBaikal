@@ -6,6 +6,7 @@
 
     &__number {
         position: relative;
+        display: none;
 
         &::before {
             content: "6";
@@ -15,6 +16,12 @@
             font-size: 170px;
             line-height: 72 / 170 * 100%;
         }
+    }
+
+    &__number-mobile {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
     &__title {

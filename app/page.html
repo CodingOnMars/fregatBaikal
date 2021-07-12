@@ -15,19 +15,25 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="main-wrapper">
 
         <header class="header">
-            <div class="container header__container">
-                <div class="header__inner">
+            <div class="container-fluid">
 
+                <div class="menu-burger">
+                    <div class="menu-burger__line"></div>
+                    <div class="menu-burger__line"></div>
+                    <div class="menu-burger__line"></div>
+                </div>
+
+                <div class="header__inner">
                     <nav class="menu menu-left">
                         <ul class="menu-left__list">
                             <li class="menu-left__item">
                                 <a class="menu-left__link nav-link" href="#">Номера и цены</a>
                                 <ul class="menu-left__dropdown dropdown">
                                     <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">Сибирский чай</a>
+                                        <a class="dropdown__link" href="#">Сибирский чан</a>
                                     </li>
                                     <li class="dropdown__item">
                                         <a class="dropdown__link" href="#">Мангал на природе</a>
@@ -46,7 +52,7 @@
                                 </a>
                                 <ul class="menu-left__dropdown dropdown">
                                     <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">Сибирский чай</a>
+                                        <a class="dropdown__link" href="#">Сибирский чан</a>
                                     </li>
                                     <li class="dropdown__item">
                                         <a class="dropdown__link" href="#">Мангал на природе</a>
@@ -63,7 +69,7 @@
                                 <a class="menu-left__link nav-link" href="#">О базе отдыха</a>
                                 <ul class="menu-left__dropdown dropdown">
                                     <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">Сибирский чай</a>
+                                        <a class="dropdown__link" href="#">Сибирский чан</a>
                                     </li>
                                     <li class="dropdown__item">
                                         <a class="dropdown__link" href="#">Мангал на природе</a>
@@ -76,10 +82,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-left__item">
+                            <li class="menu-left__item menu-left__item--reviews">
                                 <a class="menu-left__link nav-link" href="#">Отзывы</a>
                             </li>
-                            <li class="menu-left__item">
+                            <li class="menu-left__item menu-left__item--contacts">
                                 <a class="menu-left__link nav-link" href="#">Контакты</a>
                             </li>
                         </ul>
@@ -87,18 +93,21 @@
 
                     <a href="#" class="logo">
                         <picture class="logo__images">
-                            <source srcset="images/logo-mobile.png" media="(max-width: 599px)">
-                            <img class="logo__img" src="images/logo.png" alt="Фрегат логотип" width="167" height="232">
+                            <!-- <source srcset="images/logo-mobile.png" media="(max-width: 500px)"> -->
+                            <source srcset="images/logo-tablet.png" media="(max-width: 1365px)">
+                            <img class="logo__img" src="images/logo.png" alt="Фрегат логотип">
                         </picture>
                     </a>
 
                     <nav class="menu menu-right">
                         <ul class="menu-right__list">
                             <li class="menu-right__item">
-                                <a class="menu-right__link" href="tel:83952560026">8 (3952) 56-00-26</a>
+                                <a class="menu-right__link menu-right__link--icon" href="tel:83952560026">8 (3952)
+                                    56-00-26</a>
                             </li>
                             <li class="menu-right__item">
-                                <a class="menu-right__link" href="tel:83952560026">8 (3952) 56-00-26</a>
+                                <a class="menu-right__link menu-right__link--icon" href="tel:83952560026">8 (3952)
+                                    56-00-26</a>
                             </li>
                             <li class="menu-right__item">
                                 <ul class="menu-right__socials socials">
@@ -136,10 +145,8 @@
         <main class="main">
         </main>
 
-
-
         <footer class="footer">
-            <div class="container footer__container">
+            <div class="container-fluid footer__container">
                 <div class="footer-inner">
                     <nav class="footer-menu">
                         <ul class="footer-menu__list">
@@ -200,10 +207,16 @@
                         </ul>
                     </div>
                 </div>
+                <div class="copyright">
+                    <p class="copyright__text">
+                        © Фрегат Байкал 2021
+                    </p>
+                    <a class="copyright__link mars-link" href="https://github.com/CodingOnMars" target="_blank">
+                        Разработка: CodingOnMars
+                    </a>
+                </div>
             </div>
         </footer>
-
-
     </div>
 
     <script src="js/main.min.js"></script>

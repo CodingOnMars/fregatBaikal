@@ -9,3 +9,250 @@
         font-size: 8rem;
     }
 }
+
+@media (min-width: 1366px) {
+    .menu-left__item {
+        &:hover>.dropdown {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+@media (max-width:1874px) {
+
+    .menu-left,
+    .menu-right {
+        padding-top: 20px;
+    }
+
+    .menu-left {
+        padding-right: 10px;
+    }
+
+    .menu-right {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    .menu-right__list,
+    .menu-left__list {
+        padding-bottom: 15px;
+    }
+
+    .menu-right__item,
+    .menu-left__item {
+        padding-top: 15px;
+    }
+
+    .dropdown {
+        top: 40px;
+        background: $primary-color;
+    }
+
+    .footer-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width:1365px) {
+    .menu-left {
+        padding-right: 10px;
+    }
+
+    .menu-left__item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    .menu-right {
+        padding-left: 5px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        order: -1;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .benefits__number::before {
+        font-size: 140px;
+        top: 30px;
+        left: -75px;
+    }
+
+    .footer-menu__list {
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+
+    .footer__btn {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer__phone {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .menu-left {
+        padding-right: 40px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .menu-right {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .menu-left__list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $nav-color;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform .5s;
+        overflow: auto;
+    }
+
+    .menu-left__list.active {
+        transform: translateY(0%);
+    }
+
+    .menu-left__item {
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 50px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    .dropdown .main-title {
+        font-size: 7.5rem;
+    }
+
+    .cover__description {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .benefits__number::before {
+        font-size: 110px;
+        top: 23px;
+        left: -63px;
+    }
+
+    .footer-menu {
+        padding-bottom: 30px;
+    }
+
+    .footer__btn {
+        margin-bottom: 100px;
+    }
+
+    .footer__contacts {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 4.5rem;
+    }
+
+    .cover__description {
+        font-size: 16px;
+    }
+
+    .btn-book {
+        padding: 22px 25px;
+        font-size: 16px;
+    }
+
+    .review__title {
+        font-size: 17px;
+    }
+
+    .review__text,
+    .review__author {
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .benefits__number::before {
+        content: "";
+    }
+
+    .benefits__number-mobile {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .footer-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer__btn {
+        margin-bottom: 60px;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 12px;
+    }
+
+    .footer__contacts {
+        padding-bottom: 0;
+    }
+
+    .footer__phone {
+        font-size: 25px;
+    }
+
+    .footer__text {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        flex-wrap: wrap;
+    }
+
+    .copyright__text {
+        margin-bottom: 20px;
+    }
+}

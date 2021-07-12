@@ -136,3 +136,13 @@ body {
 .footer {
     flex: 0 0 auto;
 }
+
+.mars-link {
+    transition: color .5s ease;
+
+    @media (min-width: 860px) {
+        &:hover {
+            color: #f22323;
+        }
+    }
+}
