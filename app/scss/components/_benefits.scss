@@ -4,91 +4,20 @@
         padding-bottom: 50px;
     }
 
-    &__number {
-        position: relative;
-        display: none;
-
-        &::before {
-            content: "6";
-            position: absolute;
-            top: 41px;
-            left: -100px;
-            font-size: 170px;
-            line-height: 72 / 170 * 100%;
-        }
-    }
-
-    &__number-mobile {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    &__title {
-        max-width: 1150px;
-        margin: 0 auto;
-        padding-left: 100px;
-    }
-
     &__items {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        gap: 60px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
         height: auto;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     &__item {
-        position: relative;
         max-width: 730px;
-        padding-left: 200px;
     }
 
-    &__item--picture {
-        &::before {
-            position: absolute;
-            top: 0;
-            left: -10px;
-            width: 185px;
-            height: 200px;
-        }
-
-        &-1 {
-            &::before {
-                content: url(../images/benefits-1.png);
-            }
-        }
-
-        &-2 {
-            &::before {
-                content: url(../images/benefits-2.png);
-            }
-        }
-
-        &-3 {
-            &::before {
-                content: url(../images/benefits-3.png);
-            }
-        }
-
-        &-4 {
-            &::before {
-                content: url(../images/benefits-4.png);
-            }
-        }
-
-        &-5 {
-            &::before {
-                content: url(../images/benefits-5.png);
-            }
-        }
-
-        &-6 {
-            &::before {
-                content: url(../images/benefits-6.png);
-            }
-        }
+    &__info {
+        margin-top: 30px;
     }
 
     &__subtitle {
@@ -144,9 +73,7 @@
         }
     }
 
-
     &__text {
         max-width: 465px;
     }
-
 }

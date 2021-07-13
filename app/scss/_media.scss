@@ -1,12 +1,210 @@
+@media (min-width: 320px) {
+    .btn-book {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 500px) {
+    .cover__description {
+        font-size: 20px;
+    }
+
+    .benefits__number-mobile {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .benefits__title {
+        max-width: 1150px;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+
+    .benefits__number {
+        position: relative;
+
+        &::before {
+            content: "6";
+            position: absolute;
+            top: 23px;
+            left: -63px;
+            font-size: 100px;
+            line-height: 72 / 170 * 100%;
+        }
+    }
+
+    .footer-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer-menu {
+        flex-direction: row;
+    }
+
+    .footer__text {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .footer__btn {
+        margin-bottom: 150px;
+        padding: 24px 46px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        flex-wrap: nowrap;
+    }
+
+    .copyright__text {
+        margin-bottom: 0;
+    }
+}
+
 @media (min-width: 768px) {
+    .main-title {
+        font-size: 7.5rem;
+    }
+
+    .btn-book {
+        padding: 22px 70px;
+        font-size: 20px;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 54px 40px;
+    }
+
+    .review__title,
+    .review__author {
+        font-size: 20px;
+    }
+
+    .review__text {
+        font-size: 16px;
+    }
+
     .cashback__container {
         background: linear-gradient(rgba(73, 187, 255, 0.6), rgba(239, 249, 255, 0.6)), url(../images/world-map.jpg);
         background-position: center;
         background-size: cover;
     }
 
+    .title {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+    }
+
     .discount {
         font-size: 8rem;
+    }
+
+    .footer-menu {
+        padding-bottom: 69px;
+    }
+
+    .footer__contacts {
+        margin-bottom: 112px;
+    }
+
+    .footer__phone {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 900px) {
+    .services__link {
+        transition: color .3s ease-in-out;
+
+        &:hover {
+            color: $btnBook-hover;
+        }
+    }
+
+    .services__arrow-right {
+        padding-left: 10px;
+
+        &::before {
+            content: '';
+            width: 25px;
+            height: 2px;
+            background: $dusty-gray;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid $dusty-gray;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .cover__items {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cover__title {
+        margin-top: 75px;
+    }
+
+    .cover__description {
+        font-size: 30px;
+    }
+
+    .review {
+        margin-top: 131px;
+    }
+
+    .services {
+        margin-top: 161px;
+    }
+
+    .benefits__items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin-top: 100px;
+    }
+
+    .benefits__item {
+        display: flex;
+    }
+
+    .benefits__info {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+
+    .footer__btn {
+        margin-bottom: 100px;
+        transition: border 0.3s ease-in-out;
+
+        &:hover {
+            border: 2px dotted $white;
+        }
+    }
+
+    .mars-link {
+        transition: color .5s ease;
+
+        &:hover {
+            color: #f22323;
+        }
     }
 }
 
@@ -18,7 +216,76 @@
             transform: translate(0, 0);
         }
     }
+
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .benefits__number::before {
+        font-size: 140px;
+        top: 30px;
+        left: -75px;
+    }
+
+    .footer-menu__list {
+        &:not(:last-child) {
+
+            margin-right: 81px;
+        }
+    }
+
+    .footer__btn {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
+
+@media (min-width: 1535px) {
+    .main-title {
+        font-size: 12.5rem;
+    }
+
+    .services {
+        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 0;
+    }
+
+    .title {
+        font-size: 65px;
+    }
+
+    .footer__phone {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .benefits__number::before {
+        content: "6";
+        top: 41px;
+        left: -100px;
+        font-size: 170px;
+    }
+
+    .footer-inner {
+        padding-left: 199px;
+        padding-right: 199px;
+    }
+}
+
+//////////////////////////////////////////////
 
 @media (max-width:1874px) {
 
@@ -51,10 +318,6 @@
         background: $primary-color;
     }
 
-    .footer-inner {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
 }
 
 @media (max-width:1365px) {
@@ -75,31 +338,6 @@
     .logo {
         margin-left: 20px;
         order: -1;
-    }
-
-    .title {
-        font-size: 50px;
-    }
-
-    .benefits__number::before {
-        font-size: 140px;
-        top: 30px;
-        left: -75px;
-    }
-
-    .footer-menu__list {
-        &:not(:last-child) {
-            margin-right: 35px;
-        }
-    }
-
-    .footer__btn {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .footer__phone {
-        font-size: 30px;
     }
 }
 
@@ -150,109 +388,5 @@
         }
     }
 
-    .dropdown .main-title {
-        font-size: 7.5rem;
-    }
 
-    .cover__description {
-        font-size: 20px;
-    }
-
-    .title {
-        font-size: 40px;
-    }
-
-    .benefits__number::before {
-        font-size: 110px;
-        top: 23px;
-        left: -63px;
-    }
-
-    .footer-menu {
-        padding-bottom: 30px;
-    }
-
-    .footer__btn {
-        margin-bottom: 100px;
-    }
-
-    .footer__contacts {
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 500px) {
-    .main-title {
-        font-size: 4.5rem;
-    }
-
-    .cover__description {
-        font-size: 16px;
-    }
-
-    .btn-book {
-        padding: 22px 25px;
-        font-size: 16px;
-    }
-
-    .review__title {
-        font-size: 17px;
-    }
-
-    .review__text,
-    .review__author {
-        font-size: 15px;
-    }
-
-    .title {
-        font-size: 30px;
-    }
-
-    .benefits__number::before {
-        content: "";
-    }
-
-    .benefits__number-mobile {
-        display: inline-block;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .footer-inner {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .footer-menu {
-        flex-direction: column;
-    }
-
-    .footer__btn {
-        margin-bottom: 60px;
-        padding-left: 35px;
-        padding-right: 35px;
-        font-size: 12px;
-    }
-
-    .footer__contacts {
-        padding-bottom: 0;
-    }
-
-    .footer__phone {
-        font-size: 25px;
-    }
-
-    .footer__text {
-        margin-top: 15px;
-        margin-bottom: 25px;
-        font-size: 15px;
-    }
-
-    .copyright {
-        flex-wrap: wrap;
-    }
-
-    .copyright__text {
-        margin-bottom: 20px;
-    }
 }
