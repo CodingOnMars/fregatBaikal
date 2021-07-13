@@ -22,8 +22,14 @@
 
             <header class="header">
                 <div class="container-fluid">
-                    <div class="header__inner header__inner--transparent">
 
+                    <div class="menu-burger">
+                        <div class="menu-burger__line"></div>
+                        <div class="menu-burger__line"></div>
+                        <div class="menu-burger__line"></div>
+                    </div>
+
+                    <div class="header__inner header__inner--transparent">
                         <nav class="menu menu-left">
                             <ul class="menu-left__list">
                                 <li class="menu-left__item">
@@ -79,10 +85,10 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-left__item">
+                                <li class="menu-left__item menu-left__item--reviews">
                                     <a class="menu-left__link nav-link" href="#">Отзывы</a>
                                 </li>
-                                <li class="menu-left__item">
+                                <li class="menu-left__item menu-left__item--contacts">
                                     <a class="menu-left__link nav-link" href="#">Контакты</a>
                                 </li>
                             </ul>
@@ -90,9 +96,9 @@
 
                         <a href="#" class="logo">
                             <picture class="logo__images">
-                                <source srcset="images/logo-mobile.png" media="(max-width: 599px)">
-                                <img class="logo__img" src="images/logo.png" alt="Фрегат логотип" width="167"
-                                    height="232">
+                                <!-- <source srcset="images/logo-mobile.png" media="(max-width: 500px)"> -->
+                                <source srcset="images/logo-tablet.png" media="(max-width: 1365px)">
+                                <img class="logo__img" src="images/logo.png" alt="Фрегат логотип">
                             </picture>
                         </a>
 
@@ -200,21 +206,49 @@
                     </div>
 
                     <div class="cover__services services">
-                        <div class="services__item services__item--service-1">
-                            <h3 class="services__title">Сауна на берегу</h3>
-                            <a class="services__link" href="#">Подробнее<span class="services__arrow-right"></span></a>
+                        <div class="services__item">
+                            <div class="services__picture">
+                                <img class="services__img" src="images/services-1.png" alt="Сауна на берегу" width="127"
+                                    height="95">
+                            </div>
+                            <div class="services__info">
+                                <h3 class="services__title">Сауна на берегу</h3>
+                                <a class="services__link" href="#">Подробнее<span
+                                        class="services__arrow-right"></span></a>
+                            </div>
                         </div>
-                        <div class="services__item services__item--service-2">
-                            <h3 class="services__title">Скоростной катер</h3>
-                            <a class="services__link" href="#">Подробнее<span class="services__arrow-right"></span></a>
+                        <div class="services__item">
+                            <div class="services__picture">
+                                <img class="services__img" src="images/services-2.png" alt="Скоростной катер"
+                                    width="127" height="95">
+                            </div>
+                            <div class="services__info">
+                                <h3 class="services__title">Скоростной катер</h3>
+                                <a class="services__link" href="#">Подробнее<span
+                                        class="services__arrow-right"></span></a>
+                            </div>
                         </div>
-                        <div class="services__item services__item--service-3">
-                            <h3 class="services__title">Ресторан с видом на Байкал</h3>
-                            <a class="services__link" href="#">Подробнее<span class="services__arrow-right"></span></a>
+                        <div class="services__item">
+                            <div class="services__picture">
+                                <img class="services__img" src="images/services-3.png" alt="Ресторан с видом на Байкал"
+                                    width="127" height="95">
+                            </div>
+                            <div class="services__info">
+                                <h3 class="services__title">Ресторан с видом на Байкал</h3>
+                                <a class="services__link" href="#">Подробнее<span
+                                        class="services__arrow-right"></span></a>
+                            </div>
                         </div>
-                        <div class="services__item services__item--service-4">
-                            <h3 class="services__title">Сибирский чан</h3>
-                            <a class="services__link" href="#">Подробнее<span class="services__arrow-right"></span></a>
+                        <div class="services__item">
+                            <div class="services__picture">
+                                <img class="services__img" src="images/services-4.png" alt="Сибирский чан" width="127"
+                                    height="95">
+                            </div>
+                            <div class="services__info">
+                                <h3 class="services__title">Сибирский чан</h3>
+                                <a class="services__link" href="#">Подробнее<span
+                                        class="services__arrow-right"></span></a>
+                            </div>
                         </div>
                     </div>
 
@@ -227,65 +261,105 @@
                 <div class="container benefits__container">
                     <h2 class="benefits__title title">
                         <span class="benefits__number"></span>
+                        <span class="benefits__number-mobile">6</span>
                         Причин, почему для отдыха на Байкале нужно выбрать Фрегат
                     </h2>
 
                     <div class="benefits__items">
 
-                        <div class="benefits__item benefits__item--picture benefits__item--picture-1">
-                            <h3 class="benefits__subtitle subtitle">
-                                <span class="benefits__icon benefits__icon--user"></span>
-                                Размещение до 70 человек
-                            </h3>
-                            <p class="benefits__text text">1 гостиничный комплекс с номерами категории “Стандарт”,
-                                "Премьер" и “Люкс”, а так же 4 отдельных коттеджа.</p>
+                        <div class="benefits__item">
+                            <div class="benefits__picture">
+                                <img class="benefits__img" src="images/benefits-1.png" alt="Гостиничный комплекс"
+                                    width="185" height="200">
+                            </div>
+                            <div class="benefits__info">
+                                <h3 class="benefits__subtitle subtitle">
+                                    <span class="benefits__icon benefits__icon--user"></span>
+                                    Размещение до 70 человек
+                                </h3>
+                                <p class="benefits__text text">1 гостиничный комплекс с номерами категории “Стандарт”,
+                                    "Премьер" и “Люкс”, а так же 4 отдельных коттеджа.</p>
+                            </div>
                         </div>
-                        <div class="benefits__item benefits__item--picture benefits__item--picture-2">
-                            <h3 class="benefits__subtitle subtitle">
-                                <span class="benefits__icon benefits__icon--sun"></span>
-                                Отдых для всей семьи
-                            </h3>
-                            <p class="benefits__text text">Большая игровая зона, беседки с мангальной зоной, детская и
-                                спортивная площадка.</p>
+                        <div class="benefits__item">
+                            <div class="benefits__picture">
+                                <img class="benefits__img" src="images/benefits-2.png" alt="Гостиничный комплекс"
+                                    width="185" height="200">
+                            </div>
+                            <div class="benefits__info">
+                                <h3 class="benefits__subtitle subtitle">
+                                    <span class="benefits__icon benefits__icon--sun"></span>
+                                    Отдых для всей семьи
+                                </h3>
+                                <p class="benefits__text text">Большая игровая зона, беседки с мангальной зоной, детская
+                                    и
+                                    спортивная площадка.</p>
+                            </div>
                         </div>
-                        <div class="benefits__item benefits__item--picture benefits__item--picture-3">
-                            <h3 class="benefits__subtitle subtitle">
-                                <span class="benefits__icon benefits__icon--compass"></span>
-                                Территория более 6 гектар
-                            </h3>
-                            <p class="benefits__text text">Закрытая территория боле 6 Га, cвоя береговая линия, два
-                                оборудованных пляжа, cпуск для водной техники, вертолетная площадка</p>
+                        <div class="benefits__item">
+                            <div class="benefits__picture">
+                                <img class="benefits__img" src="images/benefits-3.png" alt="Гостиничный комплекс"
+                                    width="185" height="200">
+                            </div>
+                            <div class="benefits__info">
+                                <h3 class="benefits__subtitle subtitle">
+                                    <span class="benefits__icon benefits__icon--compass"></span>
+                                    Территория более 6 гектар
+                                </h3>
+                                <p class="benefits__text text">Закрытая территория боле 6 Га, cвоя береговая линия, два
+                                    оборудованных пляжа, cпуск для водной техники, вертолетная площадка</p>
+                            </div>
                         </div>
-                        <div class="benefits__item benefits__item--picture benefits__item--picture-4">
-                            <h3 class="benefits__subtitle subtitle">
-                                <span class="benefits__icon benefits__icon--wave"></span>
-                                Малое море (Байкал)
-                            </h3>
-                            <p class="benefits__text text">Здесь редко идет дождь и бывает пасмурно. Это одно из
-                                немногих мест на планете, где практически все дни в году - солнечные.</p>
+                        <div class="benefits__item">
+                            <div class="benefits__picture">
+                                <img class="benefits__img" src="images/benefits-4.png" alt="Гостиничный комплекс"
+                                    width="185" height="200">
+                            </div>
+                            <div class="benefits__info">
+                                <h3 class="benefits__subtitle subtitle">
+                                    <span class="benefits__icon benefits__icon--wave"></span>
+                                    Малое море (Байкал)
+                                </h3>
+                                <p class="benefits__text text">Здесь редко идет дождь и бывает пасмурно. Это одно из
+                                    немногих мест на планете, где практически все дни в году - солнечные.</p>
+                            </div>
                         </div>
-                        <div class="benefits__item benefits__item--picture benefits__item--picture-5">
-                            <h3 class="benefits__subtitle subtitle">
-                                <span class="benefits__icon benefits__icon--building"></span>
-                                Ресторанный комплекс
-                            </h3>
-                            <p class="benefits__text text">Ресторанный зал на 100 посадочных мест с панорамным видом на
-                                Байкал, закрытая веранда.</p>
+                        <div class="benefits__item">
+                            <div class="benefits__picture">
+                                <img class="benefits__img" src="images/benefits-5.png" alt="Гостиничный комплекс"
+                                    width="185" height="200">
+                            </div>
+                            <div class="benefits__info">
+                                <h3 class="benefits__subtitle subtitle">
+                                    <span class="benefits__icon benefits__icon--building"></span>
+                                    Ресторанный комплекс
+                                </h3>
+                                <p class="benefits__text text">Ресторанный зал на 100 посадочных мест с панорамным видом
+                                    на
+                                    Байкал, закрытая веранда.</p>
+                            </div>
                         </div>
-                        <div class="benefits__item benefits__item--picture benefits__item--picture-6">
-                            <h3 class="benefits__subtitle subtitle">
-                                <span class="benefits__icon benefits__icon--umbrella"></span>
-                                Комплекс услуг
-                            </h3>
-                            <p class="benefits__text text">Наша база отдых предлагает множество услуг: сауна на берегу,
-                                банный чан, прокат велосипедов, конференц-зал до 50 человек и многое другое.</p>
+                        <div class="benefits__item">
+                            <div class="benefits__picture">
+                                <img class="benefits__img" src="images/benefits-6.png" alt="Гостиничный комплекс"
+                                    width="185" height="200">
+                            </div>
+                            <div class="benefits__info">
+                                <h3 class="benefits__subtitle subtitle">
+                                    <span class="benefits__icon benefits__icon--umbrella"></span>
+                                    Комплекс услуг
+                                </h3>
+                                <p class="benefits__text text">Наша база отдых предлагает множество услуг: сауна на
+                                    берегу,
+                                    банный чан, прокат велосипедов, конференц-зал до 50 человек и многое другое.</p>
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <section class="options">
+            <!-- <section class="options">
                 <div class="container options__container">
 
                     <h2 class="options__title title">Варианты размещения</h2>
@@ -845,74 +919,83 @@
                 </div>
             </section>
 
-        </main>
+        </main> -->
 
 
 
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="footer-inner">
-                    <nav class="footer-menu">
-                        <ul class="footer-menu__list">
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Главная</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Номера и цены</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Услуги и развлечения</a>
-                            </li>
-                        </ul>
-                        <ul class="footer-menu__list">
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">О нас</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Памятка туриста</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Схема проезда</a>
-                            </li>
-                        </ul>
-                        <ul class="footer-menu__list">
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Отзывы</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a class="footer-menu__link nav-link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <footer class="footer">
+                <div class="container-fluid footer__container">
+                    <div class="footer-inner">
+                        <nav class="footer-menu">
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Главная</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Номера и цены</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Услуги и развлечения</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">О нас</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Памятка туриста</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Схема проезда</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Отзывы</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a class="footer-menu__link nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
 
-                    <a class="footer__btn" href="#">Получить консультацию</a>
+                        <a class="footer__btn" href="#">Получить консультацию</a>
 
-                    <div class="footer__contacts">
-                        <a class="footer__phone" href="tel:+73952560026">+7 (3952) 56-00-26</a>
-                        <p class="footer__text">Режим работы с 10:00 до 22:00</p>
-                        <ul class="footer-socials socials">
-                            <li class="footer-socials__item socials__item">
-                                <a class="footer-socials__link socials__link" href="#">
-                                    <img class="socials__img" src="images/viber.svg" alt="Viber" width="24" height="24">
-                                </a>
-                            </li>
-                            <li class="footer-socials__item socials__item">
-                                <a class="footer-socials__link socials__link" href="#">
-                                    <img class="socials__img" src="images/instagram.svg" alt="Instagram" width="24"
-                                        height="24">
-                                </a>
-                            </li>
-                            <li class="footer-socials__item socials__item">
-                                <a class="footer-socials__link socials__link" href="#">
-                                    <img class="socials__img" src="images/whatsapp.svg" alt="WhatsApp" width="24"
-                                        height="24">
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="footer__contacts">
+                            <a class="footer__phone" href="tel:+73952560026">+7 (3952) 56-00-26</a>
+                            <p class="footer__text">Режим работы с 10:00 до 22:00</p>
+                            <ul class="footer-socials socials">
+                                <li class="footer-socials__item socials__item">
+                                    <a class="footer-socials__link socials__link" href="#">
+                                        <img class="socials__img" src="images/viber.svg" alt="Viber" width="24"
+                                            height="24">
+                                    </a>
+                                </li>
+                                <li class="footer-socials__item socials__item">
+                                    <a class="footer-socials__link socials__link" href="#">
+                                        <img class="socials__img" src="images/instagram.svg" alt="Instagram" width="24"
+                                            height="24">
+                                    </a>
+                                </li>
+                                <li class="footer-socials__item socials__item">
+                                    <a class="footer-socials__link socials__link" href="#">
+                                        <img class="socials__img" src="images/whatsapp.svg" alt="WhatsApp" width="24"
+                                            height="24">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p class="copyright__text">
+                            © Фрегат Байкал 2021
+                        </p>
+                        <a class="copyright__link mars-link" href="https://github.com/CodingOnMars" target="_blank">
+                            Разработка: CodingOnMars
+                        </a>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
 
     </div>
