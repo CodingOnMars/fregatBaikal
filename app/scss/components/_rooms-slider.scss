@@ -1,12 +1,15 @@
 .rooms-slider {
     display: flex;
-    gap: 21px;
+    justify-content: center;
+    gap: 10px;
+    overflow: auto;
 
     &__item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 15px;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 8px;
         background: $white;
     }
 
@@ -17,12 +20,12 @@
             position: absolute;
             content: "Топ продаж";
             top: 0;
-            right: 0;
-            width: 190px;
-            height: 50px;
+            right: 0px;
+            width: 150px;
+            height: 40px;
             padding-top: 10px;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 100%;
             text-align: center;
             color: $white;
@@ -31,18 +34,17 @@
     }
 
     &__img {
-        margin-bottom: 30px;
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 15px;
     }
 
     &__inner {
         max-width: 430px;
-        padding-left: 38px;
-        padding-right: 7px;
-        padding-bottom: 12px;
     }
 
     &__title {
-        margin-top: 25px;
+        margin-top: 10px;
         margin-bottom: 5px;
     }
 
@@ -52,9 +54,9 @@
     }
 }
 
-.info {
+.rooms-info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 15px;
     margin-bottom: 38px;
 
@@ -71,7 +73,7 @@
     }
 }
 
-.info__item,
+.rooms-info__item,
 .prices__item {
     &:not(:last-child) {
         margin-bottom: 12px;
@@ -80,15 +82,15 @@
 
 .prices {
     position: relative;
-    margin-left: auto;
+    margin-top: 30px;
 
     &::before {
         position: absolute;
         content: "";
-        width: 2px;
-        height: 80px;
-        top: 0;
-        left: -10px;
+        width: 80%;
+        height: 4px;
+        top: -15px;
+        left: 0;
         background: $silver-color;
     }
 
@@ -100,6 +102,7 @@
 
 .availability {
     display: flex;
+    flex-wrap: wrap;
 
     &__status {
         margin: 20px 0 15px 23px;
