@@ -62,6 +62,10 @@
         width: 80%;
     }
 
+    .reviews__items {
+        // gap: 60px;
+    }
+
     .footer-inner {
         padding-left: 50px;
         padding-right: 50px;
@@ -334,6 +338,10 @@
         margin-right: 50px;
     }
 
+    .reviews__text {
+        -webkit-line-clamp: 7;
+    }
+
     .footer__btn {
         margin-bottom: 100px;
         transition: border 0.3s ease-in-out;
@@ -454,6 +462,19 @@
         padding: 30px 31px 60px 20px;
     }
 
+    .reviews__text {
+        font-size: 20px;
+        -webkit-line-clamp: 8;
+    }
+
+    .reviews__items {
+        margin-top: 80px;
+    }
+
+    .reviews__content {
+        padding: 65px 50px;
+    }
+
     .footer-menu__list {
         &:not(:last-child) {
 
@@ -483,6 +504,24 @@
 
     .booking__btn {
         margin-top: 53px;
+    }
+
+    .reviews__container {
+        padding-top: 100px;
+        padding-bottom: 150px;
+        background-image: url(../images/reviews-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .reviews__text {
+        font-size: 25px;
+        -webkit-line-clamp: 10;
+    }
+
+    .reviews__bottom {
+        margin-right: 9rem;
     }
 
     .footer__phone {
