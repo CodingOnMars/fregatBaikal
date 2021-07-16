@@ -1,6 +1,5 @@
 .rooms-slider {
     display: flex;
-    justify-content: center;
     gap: 10px;
     overflow: auto;
 
@@ -9,7 +8,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        padding: 8px;
+        padding: 10px 12px;
         background: $white;
     }
 

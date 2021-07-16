@@ -4,6 +4,16 @@
     }
 }
 
+@media (min-width: 375px) {
+
+    .form__input-date,
+    .form__input,
+    .form__select,
+    .form__area {
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 500px) {
     .cover__description {
         font-size: 20px;
@@ -32,6 +42,11 @@
             font-size: 100px;
             line-height: 72 / 170 * 100%;
         }
+    }
+
+    .form__input,
+    .form__select {
+        width: 80%;
     }
 
     .footer-inner {
@@ -118,6 +133,32 @@
 
     .rooms-slider__img {
         max-width: 320px;
+    }
+
+    .booking__list {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .booking__item {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 85px;
+        }
+    }
+
+    .form__dropdown,
+    .form__group {
+
+        &::before {
+            top: 65px;
+        }
+    }
+
+    .form__input {
+        position: relative;
+        padding-left: 26px;
+        padding-right: 24px;
     }
 
     .cashback__container {
@@ -232,6 +273,42 @@
         font-size: 14px;
     }
 
+    .form {
+        flex-direction: row;
+    }
+
+    .form__left {
+        margin-right: 52px;
+    }
+
+    .form__dates {
+        display: flex;
+    }
+
+    .form__date {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    .form__item {
+        &:not(:last-child) {
+            margin-right: 51px;
+        }
+    }
+
+    .form__input-date,
+    .form__input,
+    .form__select,
+    .form__area {
+        font-size: 18px;
+    }
+
+    .form__input,
+    .form__select {
+        width: 467px;
+    }
+
     .footer__btn {
         margin-bottom: 100px;
         transition: border 0.3s ease-in-out;
@@ -332,6 +409,17 @@
         }
     }
 
+    .booking__list {
+        margin-bottom: 80px;
+    }
+
+    .form__dropdown,
+    .form__group {
+        &::before {
+            top: 75px;
+        }
+    }
+
     .footer-menu__list {
         &:not(:last-child) {
 
@@ -357,6 +445,10 @@
 
     .title {
         font-size: 65px;
+    }
+
+    .booking__btn {
+        margin-top: 53px;
     }
 
     .footer__phone {
