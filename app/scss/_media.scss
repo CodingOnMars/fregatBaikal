@@ -12,6 +12,10 @@
     .form__area {
         font-size: 14px;
     }
+
+    .entertainment__item {
+        padding: 15px 15px 40px;
+    }
 }
 
 @media (min-width: 500px) {
@@ -42,6 +46,15 @@
             font-size: 100px;
             line-height: 72 / 170 * 100%;
         }
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .entertainment__desc,
+    .entertainment__price {
+        font-size: 18px;
     }
 
     .form__input,
@@ -159,6 +172,10 @@
         position: relative;
         padding-left: 26px;
         padding-right: 24px;
+    }
+
+    .entertainment__items {
+        margin-top: 64px;
     }
 
     .cashback__container {
@@ -309,6 +326,14 @@
         width: 467px;
     }
 
+    .entertainment__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .entertainment__picture {
+        margin-right: 50px;
+    }
+
     .footer__btn {
         margin-bottom: 100px;
         transition: border 0.3s ease-in-out;
@@ -420,6 +445,15 @@
         }
     }
 
+    .entertainment__items {
+        gap: 20px;
+    }
+
+    .entertainment__item {
+        flex-direction: row;
+        padding: 30px 31px 60px 20px;
+    }
+
     .footer-menu__list {
         &:not(:last-child) {
 
@@ -501,7 +535,6 @@
         top: 40px;
         background: $primary-color;
     }
-
 }
 
 @media (max-width:1365px) {
@@ -571,6 +604,4 @@
             margin-right: 0;
         }
     }
-
-
 }
