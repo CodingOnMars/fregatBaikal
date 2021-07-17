@@ -1,11 +1,7 @@
 .reviews {
     &__container {
-        padding-top: 100px;
-        padding-bottom: 150px;
-        background-image: url(../images/reviews-bg.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     &__title {
@@ -16,10 +12,9 @@
     &__items {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         height: auto;
         gap: 20px;
-        margin-top: 80px;
+        overflow: auto;
     }
 
     &__item {
@@ -29,12 +24,14 @@
         align-items: center;
         width: 100%;
         max-width: 493px;
+        margin-right: 15px;
+        padding-top: 50px;
     }
 
     &__content {
         position: relative;
         margin-bottom: 50px;
-        padding: 65px 50px;
+        padding: 50px 20px 30px;
         background: $white;
         border: 4px solid $mainTitle-color;
 
@@ -68,7 +65,7 @@
     &__text {
         max-width: 335px;
         font-weight: 300;
-        font-size: 25px;
+        font-size: 16px;
         line-height: 130%;
         display: -webkit-box;
         -webkit-line-clamp: 10;
@@ -101,7 +98,6 @@
     &__bottom {
         display: flex;
         align-items: center;
-        margin-right: 9rem;
     }
 
     &__pictures {
@@ -109,9 +105,9 @@
     }
 
     &__img {
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        width: 101px;
-        height: 101px;
         object-fit: cover;
     }
 

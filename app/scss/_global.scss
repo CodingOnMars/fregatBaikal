@@ -29,11 +29,11 @@ body {
 
 
 .container {
-    max-width: 1550px;
+    max-width: 1500px;
     margin: 0 auto;
 
     @media (max-width: 1549px) {
-        padding: 0 30px;
+        padding: 0 25px;
     }
 }
 
@@ -66,26 +66,26 @@ body {
 
 .subtitle {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 42 / 32 * 100%;
 }
 
 .text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
 }
 
 .desc-text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 110%;
 }
 
 .btn-more {
-    padding: 20px 62px;
+    padding: 15px 62px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17 / 14 *100%;
     text-transform: uppercase;
     color: $accent-color;

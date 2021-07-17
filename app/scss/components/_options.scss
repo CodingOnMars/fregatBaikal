@@ -1,7 +1,7 @@
 .options {
     &__container {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     &__title {
@@ -16,12 +16,11 @@
 
 .options-buttons {
     display: flex;
-    justify-content: center;
-    margin-bottom: 36px;
+    flex-direction: column;
 
     &__btn {
-        margin-right: 15px;
-        padding: 15px 54px;
+        margin-bottom: 25px;
+        padding: 15px 10px;
         border: 2px solid $accent-color;
     }
 

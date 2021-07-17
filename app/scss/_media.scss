@@ -4,6 +4,20 @@
     }
 }
 
+@media (min-width: 375px) {
+
+    .form__input-date,
+    .form__input,
+    .form__select,
+    .form__area {
+        font-size: 14px;
+    }
+
+    .entertainment__item {
+        padding: 15px 15px 40px;
+    }
+}
+
 @media (min-width: 500px) {
     .cover__description {
         font-size: 20px;
@@ -31,6 +45,36 @@
             left: -63px;
             font-size: 100px;
             line-height: 72 / 170 * 100%;
+        }
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .entertainment__desc,
+    .entertainment__price {
+        font-size: 18px;
+    }
+
+    .form__input,
+    .form__select {
+        width: 80%;
+    }
+
+    .map__img {
+        max-width: 400px;
+        max-height: 350px;
+    }
+
+    .contacts-info__link,
+    .contacts-info__text {
+        font-size: 18px;
+    }
+
+    .contacts-info__link {
+        &:nth-child(2) {
+            margin-right: 12px;
         }
     }
 
@@ -88,12 +132,6 @@
         font-size: 16px;
     }
 
-    .cashback__container {
-        background: linear-gradient(rgba(73, 187, 255, 0.6), rgba(239, 249, 255, 0.6)), url(../images/world-map.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
     .title {
         font-size: 40px;
     }
@@ -102,8 +140,78 @@
         font-size: 25px;
     }
 
+    .text {
+        font-size: 18px;
+    }
+
+    .desc-text {
+        font-size: 16px;
+    }
+
+    .options-buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+
+    .options-buttons__btn {
+        margin-bottom: 0;
+        margin-right: 15px;
+        padding: 10px 40px;
+    }
+
+    .rooms-slider__img {
+        max-width: 320px;
+    }
+
+    .booking__list {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .booking__item {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 85px;
+        }
+    }
+
+    .form__dropdown,
+    .form__group {
+
+        &::before {
+            top: 65px;
+        }
+    }
+
+    .form__input {
+        position: relative;
+        padding-left: 26px;
+        padding-right: 24px;
+    }
+
+    .entertainment__items {
+        margin-top: 64px;
+    }
+
+    .gallery__btn {
+        padding: 20px 62px;
+    }
+
+    .cashback__container {
+        background: linear-gradient(rgba(73, 187, 255, 0.6), rgba(239, 249, 255, 0.6)), url(../images/world-map.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
     .discount {
         font-size: 8rem;
+    }
+
+    .map__btn {
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 
     .footer-menu {
@@ -190,6 +298,114 @@
         margin-left: 50px;
     }
 
+    .options-buttons__btn {
+        padding: 15px 54px;
+    }
+
+    .rooms-slider__item {
+        padding: 15px;
+    }
+
+    .rooms-slider__img {
+        max-width: 463px;
+        margin-bottom: 30px;
+    }
+
+    .btn-more {
+        padding: 20px 62px;
+        font-size: 14px;
+    }
+
+    .form {
+        flex-direction: row;
+    }
+
+    .form__left {
+        margin-right: 52px;
+    }
+
+    .form__dates {
+        display: flex;
+    }
+
+    .form__date {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    .form__item {
+        &:not(:last-child) {
+            margin-right: 51px;
+        }
+    }
+
+    .form__input-date,
+    .form__input,
+    .form__select,
+    .form__area {
+        font-size: 18px;
+    }
+
+    .form__input,
+    .form__select {
+        width: 467px;
+    }
+
+    .entertainment__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .entertainment__picture {
+        margin-right: 50px;
+    }
+
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(351px, 1fr));
+    }
+
+    .gallery__img {
+        max-height: 300px;
+    }
+
+    .gallery__link {
+        margin-top: 80px;
+    }
+
+    .reviews__text {
+        -webkit-line-clamp: 7;
+    }
+
+    .reviews__bottom {
+        margin-right: 5rem;
+    }
+
+    .cashback__container {
+        margin-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 145px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contacts__items {
+        gap: 20px;
+    }
+
+    .map__btn {
+        font-size: 25px;
+    }
+
+    .map__img {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .contacts-info__link,
+    .contacts-info__text {
+        font-size: 20px;
+    }
+
     .footer__btn {
         margin-bottom: 100px;
         transition: border 0.3s ease-in-out;
@@ -234,9 +450,136 @@
     }
 
     .benefits__number::before {
-        font-size: 140px;
-        top: 30px;
+        font-size: 120px;
+        top: 35px;
         left: -75px;
+    }
+
+    .rooms-slider {
+        gap: 21px;
+    }
+
+    .rooms-slider__title {
+        margin-top: 25px;
+    }
+
+    .rooms-slider__inner {
+        padding-left: 38px;
+        padding-right: 7px;
+        padding-bottom: 12px;
+    }
+
+    .rooms-slider__pictures {
+        &::before {
+            width: 190px;
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .rooms-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rooms-info__list {
+        margin-right: 5px;
+    }
+
+    .rooms-info__item {
+        padding-left: 15px;
+
+        &::before {
+            left: -5px;
+        }
+    }
+
+    .prices {
+        margin-top: 0;
+        margin-left: 10px;
+
+        &::before {
+            width: 2px;
+            height: 100%;
+            top: 0;
+            left: -10px;
+        }
+    }
+
+    .booking__list {
+        margin-bottom: 80px;
+    }
+
+    .form__dropdown,
+    .form__group {
+        &::before {
+            top: 75px;
+        }
+    }
+
+    .entertainment__items {
+        gap: 20px;
+    }
+
+    .entertainment__item {
+        flex-direction: row;
+        padding: 30px 31px 60px 20px;
+    }
+
+    .reviews__text {
+        font-size: 20px;
+        -webkit-line-clamp: 8;
+    }
+
+    .reviews__items {
+        margin-top: 80px;
+    }
+
+    .reviews__content {
+        padding: 65px 50px;
+    }
+
+    .reviews__img {
+        width: 101px;
+        height: 101px;
+    }
+
+    .contacts {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .contacts__items {
+        gap: 100px;
+    }
+
+    .contacts__title {
+        margin-top: 50px;
+    }
+
+    .map__img {
+        max-width: 877px;
+    }
+
+    .map__btn {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 31px;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $accent-color;
+            transition: height .3s ease-in-out;
+        }
+
+        &:hover {
+            &::after {
+                height: 2px;
+            }
+        }
     }
 
     .footer-menu__list {
@@ -266,17 +609,63 @@
         font-size: 65px;
     }
 
+    .booking__btn {
+        margin-top: 53px;
+    }
+
+    .reviews__container {
+        padding-top: 100px;
+        padding-bottom: 150px;
+        background-image: url(../images/reviews-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .reviews__text {
+        font-size: 25px;
+        -webkit-line-clamp: 10;
+    }
+
+    .reviews__bottom {
+        margin-right: 9rem;
+    }
+
     .footer__phone {
         font-size: 35px;
     }
 }
 
+@media (min-width: 1550px) {
+    .gallery__items {
+        grid-template-columns: repeat(4, minmax(351px, 1fr));
+        place-items: center;
+    }
+
+    .gallery__item--large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .gallery__item--medium {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .gallery__img {
+        max-height: 478px;
+    }
+}
+
 @media (min-width: 1920px) {
     .benefits__number::before {
-        content: "6";
         top: 41px;
         left: -100px;
         font-size: 170px;
+    }
+
+    .map__img {
+        max-height: 600px;
     }
 
     .footer-inner {
@@ -317,7 +706,6 @@
         top: 40px;
         background: $primary-color;
     }
-
 }
 
 @media (max-width:1365px) {
@@ -387,6 +775,4 @@
             margin-right: 0;
         }
     }
-
-
 }
