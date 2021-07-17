@@ -62,10 +62,6 @@
         width: 80%;
     }
 
-    .reviews__items {
-        // gap: 60px;
-    }
-
     .footer-inner {
         padding-left: 50px;
         padding-right: 50px;
@@ -180,6 +176,10 @@
 
     .entertainment__items {
         margin-top: 64px;
+    }
+
+    .gallery__btn {
+        padding: 20px 62px;
     }
 
     .cashback__container {
@@ -338,8 +338,25 @@
         margin-right: 50px;
     }
 
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(351px, 1fr));
+    }
+
+    .gallery__img {
+        max-height: 300px;
+    }
+
+    .gallery__link {
+        margin-top: 80px;
+    }
+
     .reviews__text {
         -webkit-line-clamp: 7;
+    }
+
+    .cashback__container {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .footer__btn {
@@ -526,6 +543,27 @@
 
     .footer__phone {
         font-size: 35px;
+    }
+}
+
+@media (min-width: 1550px) {
+    .gallery__items {
+        grid-template-columns: repeat(4, minmax(351px, 1fr));
+        place-items: center;
+    }
+
+    .gallery__item--large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .gallery__item--medium {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .gallery__img {
+        max-height: 478px;
     }
 }
 
