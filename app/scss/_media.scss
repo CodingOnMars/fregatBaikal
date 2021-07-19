@@ -544,6 +544,18 @@
         height: 101px;
     }
 
+    .slick-dots {
+        bottom: -10px;
+
+        & button {
+            font-size: 30px;
+        }
+    }
+
+    .slider-btn {
+        cursor: pointer;
+    }
+
     .contacts {
         padding-top: 100px;
         padding-bottom: 100px;
