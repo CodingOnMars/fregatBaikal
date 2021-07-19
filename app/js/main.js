@@ -34,13 +34,6 @@ $('.reviews__items').slick({
 
 	responsive: [
 		{
-			breakpoint: 1534,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			},
-		},
-		{
 			breakpoint: 1366,
 			settings: {
 				slidesToShow: 2,
