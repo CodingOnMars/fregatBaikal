@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="js/main.min.js"></script>
@@ -34,24 +35,24 @@
                         <nav class="menu menu-left">
                             <ul class="menu-left__list">
                                 <li class="menu-left__item">
-                                    <a class="menu-left__link nav-link" href="#">Номера и цены</a>
+                                    <a class="menu-left__link nav-link" href="#rooms">Номера и цены</a>
                                     <ul class="menu-left__dropdown dropdown">
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Сибирский чан</a>
+                                            <a class="dropdown__link" href="#">Забронировать номер</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Мангал на природе</a>
+                                            <a class="dropdown__link" href="#">Номер Стандарт</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Прокат велосипедов</a>
+                                            <a class="dropdown__link" href="#">Номер Премьер</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Ресторан "Фрегат"</a>
+                                            <a class="dropdown__link" href="#">Номер Люкс</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="menu-left__item">
-                                    <a class="menu-left__link nav-link" href="#">
+                                    <a class="menu-left__link nav-link" href="#services">
                                         Услуги
                                     </a>
                                     <ul class="menu-left__dropdown dropdown">
@@ -70,27 +71,27 @@
                                     </ul>
                                 </li>
                                 <li class="menu-left__item">
-                                    <a class="menu-left__link nav-link" href="#">О базе отдыха</a>
+                                    <a class="menu-left__link nav-link" href="#about">О базе отдыха</a>
                                     <ul class="menu-left__dropdown dropdown">
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Сибирский чан</a>
+                                            <a class="dropdown__link" href="#">Размещение</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Мангал на природе</a>
+                                            <a class="dropdown__link" href="#">Отдых для всей семьи</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Прокат велосипедов</a>
+                                            <a class="dropdown__link" href="#">Ресторанный комплекс</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a class="dropdown__link" href="#">Ресторан "Фрегат"</a>
+                                            <a class="dropdown__link" href="#">Комплекс услуг</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="menu-left__item menu-left__item--reviews">
-                                    <a class="menu-left__link nav-link" href="#">Отзывы</a>
+                                    <a class="menu-left__link nav-link" href="#reviews">Отзывы</a>
                                 </li>
                                 <li class="menu-left__item menu-left__item--contacts">
-                                    <a class="menu-left__link nav-link" href="#">Контакты</a>
+                                    <a class="menu-left__link nav-link" href="#contacts">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -258,7 +259,7 @@
         </div>
 
         <main class="main">
-            <section class="benefits">
+            <section class="benefits" id="about">
                 <div class="container benefits__container">
                     <h2 class="benefits__title title">
                         <span class="benefits__number"></span>
@@ -360,12 +361,10 @@
                 </div>
             </section>
 
-            <section class="options">
+            <section class="options" id="rooms">
                 <div class="container options__container">
 
                     <h2 class="options__title title">Варианты размещения</h2>
-
-
 
                     <div class="options__tabs tabs">
                         <button class="tabs__btn active btn-reset text" data-id="hotel">Гостиничный
@@ -676,7 +675,7 @@
                 </div>
             </section>
 
-            <section class="entertainment">
+            <section class="entertainment" id="services">
                 <div class="container entertainment__container">
                     <h2 class="entertainment__title title">Услуги и развлечения</h2>
 
@@ -893,7 +892,7 @@
                 </div>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <div class="container reviews__container">
                     <h2 class="reviews__title title">Отзывы о базе отдыха “Фрегат”</h2>
 
@@ -904,7 +903,7 @@
                                 <p class="reviews__text">
                                     "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём,
                                     отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха"
+                                    семейного отдыха."
                                 </p>
                             </div>
                             <div class="reviews__bottom">
@@ -924,7 +923,7 @@
                                 <p class="reviews__text">
                                     "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём,
                                     отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха"
+                                    семейного отдыха."
                                 </p>
                             </div>
                             <div class="reviews__bottom">
@@ -944,10 +943,7 @@
                                 <p class="reviews__text">
                                     "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём,
                                     отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха. Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно:
-                                    радушный приём,
-                                    отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха"
+                                    семейного отдыха."
                                 </p>
                             </div>
                             <div class="reviews__bottom">
@@ -967,7 +963,7 @@
                                 <p class="reviews__text">
                                     "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём,
                                     отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха"
+                                    семейного отдыха."
                                 </p>
                             </div>
                             <div class="reviews__bottom">
@@ -987,7 +983,7 @@
                                 <p class="reviews__text">
                                     "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём,
                                     отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха"
+                                    семейного отдыха."
                                 </p>
                             </div>
                             <div class="reviews__bottom">
@@ -1007,10 +1003,7 @@
                                 <p class="reviews__text">
                                     "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём,
                                     отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха. Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно:
-                                    радушный приём,
-                                    отличное питание, уютное пребывание и благоустроенный пляж. Рекомендую всем для
-                                    семейного отдыха"
+                                    семейного отдыха."
                                 </p>
                             </div>
                             <div class="reviews__bottom">
@@ -1041,7 +1034,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container contacts__container">
                     <div class="contacts__items">
 
