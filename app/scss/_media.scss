@@ -583,9 +583,9 @@
             top: 31px;
             left: 0;
             width: 100%;
-            height: 0;
+            height: -2px;
             background: $accent-color;
-            transition: height .3s ease-in-out;
+            transition: height .5s ease-in-out;
         }
 
         &:hover {
@@ -764,7 +764,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: $nav-color;
+        background: $mobile-menu-bg;
         z-index: 2;
         flex-direction: column;
         align-items: center;
