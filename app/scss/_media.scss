@@ -148,13 +148,13 @@
         font-size: 16px;
     }
 
-    .options-buttons {
+    .tabs {
         flex-direction: row;
         justify-content: center;
         margin-bottom: 36px;
     }
 
-    .options-buttons__btn {
+    .tabs__btn {
         margin-bottom: 0;
         margin-right: 15px;
         padding: 10px 40px;
@@ -298,7 +298,7 @@
         margin-left: 50px;
     }
 
-    .options-buttons__btn {
+    .tabs__btn {
         padding: 15px 54px;
     }
 
@@ -523,6 +523,7 @@
 
     .entertainment__item {
         flex-direction: row;
+        justify-content: flex-start;
         padding: 30px 31px 60px 20px;
     }
 

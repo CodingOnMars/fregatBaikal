@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
 </head>
 
 <body>
@@ -364,14 +365,16 @@
 
                     <h2 class="options__title title">Варианты размещения</h2>
 
-                    <div class="options-buttons">
-                        <button class="options-buttons__btn options-buttons__btn--active btn-reset text">Гостиничный
+
+
+                    <div class="options__tabs tabs">
+                        <button class="tabs__btn active btn-reset text" data-id="hotel">Гостиничный
                             корпус</button>
-                        <button class="options-buttons__btn btn-reset text">Коттеджи (Отдельные дома)</button>
+                        <button class="tabs__btn btn-reset text" data-id="cottage">Коттеджи (Отдельные
+                            дома)</button>
                     </div>
 
-                    <div class="options__items rooms-slider">
-
+                    <div class="options__items rooms-slider active" id="hotel">
                         <div class="rooms-slider__item">
                             <div class="rooms-slider__pictures">
                                 <img class="rooms-slider__img" src="images/room-1.jpg" alt="Номер категории “Стандарт”"
@@ -412,7 +415,7 @@
                             <img class="rooms-slider__img" src="images/room-2.jpg" alt="Номер категории “Стандарт”"
                                 width: "463" height: "473">
                             <div class="rooms-slider__inner">
-                                <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
+                                <h3 class="rooms-slider__title text">Номер 2-категории - “Премьер”</h3>
                                 <p class="rooms-slider__desc desc-text">
                                     Двухместный однокомнатный номер с двумя односпальными
                                     кроватями (Можно сдвинуть/раздвинуть), две прикроватные...
@@ -446,6 +449,46 @@
                             <img class="rooms-slider__img" src="images/room-3.jpg" alt="Номер категории “Стандарт”"
                                 width: "463" height: "473">
                             <div class="rooms-slider__inner">
+                                <h3 class="rooms-slider__title text">Номер 3-категории -
+                                    <br>
+                                    “Люкс”</h3>
+                                <p class="rooms-slider__desc desc-text">
+                                    Двухместный однокомнатный номер с двумя односпальными
+                                    кроватями (Можно сдвинуть/раздвинуть), две прикроватные...
+                                </p>
+                                <div class="rooms-slider__info rooms-info">
+                                    <ul class="rooms-info__list desc-text">
+                                        <li class="rooms-info__item">Кондиционер</li>
+                                        <li class="rooms-info__item">Душевая кабина</li>
+                                        <li class="rooms-info__item">Телевизор</li>
+                                    </ul>
+                                    <ul class="rooms-slider__prices prices desc-text">
+                                        <li class="prices__item">Кол-во номеров:
+                                            <span class="prices__number">9</span>
+                                        </li>
+                                        <li class="prices__item">Цены за номер:
+                                            <span class="prices__number">от 3500р.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rooms-slider__availability availability">
+                                    <a class="availability__btn btn-more" href="#">Подробнее</a>
+                                    <p class="availability__status">Свободные номера:
+                                        <br>
+                                        <span class="availability__check">в наличии</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="options__items rooms-slider" id="cottage">
+                        <div class="rooms-slider__item">
+                            <div class="rooms-slider__pictures">
+                                <img class="rooms-slider__img" src="images/cottage-house.jpg"
+                                    alt="Номер категории “Стандарт”" width: "463" height: "473">
+                            </div>
+                            <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
                                 <p class="rooms-slider__desc desc-text">
                                     Двухместный однокомнатный номер с двумя односпальными
@@ -476,7 +519,75 @@
                             </div>
                         </div>
 
+                        <div class="rooms-slider__item">
+                            <img class="rooms-slider__img" src="images/cottage-house.jpg"
+                                alt="Номер категории “Стандарт”" width: "463" height: "473">
+                            <div class="rooms-slider__inner">
+                                <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
+                                <p class="rooms-slider__desc desc-text">
+                                    Двухместный однокомнатный номер с двумя односпальными
+                                    кроватями (Можно сдвинуть/раздвинуть), две прикроватные...
+                                </p>
+                                <div class="rooms-slider__info rooms-info">
+                                    <ul class="rooms-info__list desc-text">
+                                        <li class="rooms-info__item">Кондиционер</li>
+                                        <li class="rooms-info__item">Душевая кабина</li>
+                                        <li class="rooms-info__item">Телевизор</li>
+                                    </ul>
+                                    <ul class="rooms-slider__price prices desc-text">
+                                        <li class="prices__item">Кол-во номеров:
+                                            <span class="prices__number">9</span>
+                                        </li>
+                                        <li class="prices__item">Цены за номер:
+                                            <span class="prices__number">от 3500р.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rooms-slider__availability availability">
+                                    <a class="availability__btn btn-more" href="#">Подробнее</a>
+                                    <p class="availability__status">Свободные номера:
+                                        <br>
+                                        <span class="availability__check">в наличии</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rooms-slider__item">
+                            <img class="rooms-slider__img" src="images/cottage-house.jpg"
+                                alt="Номер категории “Стандарт”" width: "463" height: "473">
+                            <div class="rooms-slider__inner">
+                                <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
+                                <p class="rooms-slider__desc desc-text">
+                                    Двухместный однокомнатный номер с двумя односпальными
+                                    кроватями (Можно сдвинуть/раздвинуть), две прикроватные...
+                                </p>
+                                <div class="rooms-slider__info rooms-info">
+                                    <ul class="rooms-info__list desc-text">
+                                        <li class="rooms-info__item">Кондиционер</li>
+                                        <li class="rooms-info__item">Душевая кабина</li>
+                                        <li class="rooms-info__item">Телевизор</li>
+                                    </ul>
+                                    <ul class="rooms-slider__prices prices desc-text">
+                                        <li class="prices__item">Кол-во номеров:
+                                            <span class="prices__number">9</span>
+                                        </li>
+                                        <li class="prices__item">Цены за номер:
+                                            <span class="prices__number">от 3500р.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rooms-slider__availability availability">
+                                    <a class="availability__btn btn-more" href="#">Подробнее</a>
+                                    <p class="availability__status">Свободные номера:
+                                        <br>
+                                        <span class="availability__check">в наличии</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </section>
 
@@ -1062,8 +1173,6 @@
 
 
     </div>
-
-    <script src="js/main.min.js"></script>
 </body>
 
 </html>
