@@ -11,10 +11,15 @@
 
     &__items {
         margin-top: 30px;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
     }
 }
 
-.options-buttons {
+.tabs {
     display: flex;
     flex-direction: column;
 
@@ -22,10 +27,136 @@
         margin-bottom: 25px;
         padding: 15px 10px;
         border: 2px solid $accent-color;
+
+        &.active {
+            color: $white;
+            background: $btn-color;
+        }
+    }
+}
+
+.rooms-slider {
+    gap: 10px;
+    overflow: auto;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px 12px;
+        background: $white;
     }
 
-    &__btn--active {
-        color: $white;
-        background: $btn-color;
+    &__pictures {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "Топ продаж";
+            top: 0;
+            right: 0px;
+            width: 150px;
+            height: 40px;
+            padding-top: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 100%;
+            text-align: center;
+            color: $white;
+            background: $sunglow;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+
+    &__inner {
+        max-width: 430px;
+    }
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    &__desc {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+.rooms-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 38px;
+
+    &__item {
+        position: relative;
+        padding-left: 18px;
+
+        &::before {
+            position: absolute;
+            content: url(../images/grey-checkmark.svg);
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.rooms-info__item,
+.prices__item {
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.prices {
+    position: relative;
+    margin-top: 30px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 4px;
+        top: -15px;
+        left: 0;
+        background: $silver-color;
+    }
+
+    &__number {
+        font-weight: 500;
+    }
+}
+
+
+.availability {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__status {
+        margin: 20px 0 15px 23px;
+        font-size: 12px;
+        line-height: 14 / 12 * 100%;
+    }
+
+    &__check {
+        position: relative;
+        padding-left: 15px;
+        font-size: 16px;
+        line-height: 20 / 16 * 100%;
+        color: $status-color;
+
+        &::before {
+            position: absolute;
+            content: url(../images/green-checkmark.svg);
+            top: 0;
+            left: 0;
+        }
     }
 }

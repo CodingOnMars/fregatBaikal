@@ -1,3 +1,5 @@
+'use strict';
+
 // Burger menu
 const menuBurger = document.querySelector('.menu-burger');
 const menuLeft = document.querySelector('.menu-left__list');
@@ -9,6 +11,28 @@ const openBurgerMenu = function () {
 
 menuBurger.addEventListener('click', openBurgerMenu);
 
+////////////////////////////////////
+
+// Switch tabs in options section
+const tabs = document.querySelector('.options__container');
+const tabButton = document.querySelectorAll('.tabs__btn');
+const contents = document.querySelectorAll('.options__items');
+
+tabs.onclick = e => {
+	const id = e.target.dataset.id;
+	if (id) {
+		tabButton.forEach(btn => {
+			btn.classList.remove('active');
+		});
+		e.target.classList.add('active');
+
+		contents.forEach(content => {
+			content.classList.remove('active');
+		});
+		const element = document.getElementById(id);
+		element.classList.add('active');
+	}
+};
 ////////////////////////////////////
 
 // Display today's date in input field
