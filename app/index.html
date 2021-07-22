@@ -9,10 +9,10 @@
     <title>Фрегат Байкал</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="js/main.min.js"></script>
 </head>
 
@@ -98,8 +98,8 @@
 
                         <a href="#" class="logo">
                             <picture class="logo__images">
-                                <!-- <source srcset="images/logo-mobile.png" media="(max-width: 500px)"> -->
-                                <source srcset="images/logo-tablet.png" media="(max-width: 1365px)">
+                                <source srcset="images/logo-mobile.png" media="(max-width=500px)">
+                                <source srcset="images/logo-tablet.png" media="(max-width=1365px)">
                                 <img class="logo__img" src="images/logo.png" alt="Фрегат логотип">
                             </picture>
                         </a>
@@ -377,7 +377,7 @@
                         <div class="rooms-slider__item">
                             <div class="rooms-slider__pictures">
                                 <img class="rooms-slider__img" src="images/room-1.jpg" alt="Номер категории “Стандарт”"
-                                    width: "463" height: "473">
+                                    width="463" height="308">
                             </div>
                             <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
@@ -412,7 +412,7 @@
 
                         <div class="rooms-slider__item">
                             <img class="rooms-slider__img" src="images/room-2.jpg" alt="Номер категории “Стандарт”"
-                                width: "463" height: "473">
+                                width="463" height="308">
                             <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 2-категории - “Премьер”</h3>
                                 <p class="rooms-slider__desc desc-text">
@@ -446,7 +446,7 @@
 
                         <div class="rooms-slider__item">
                             <img class="rooms-slider__img" src="images/room-3.jpg" alt="Номер категории “Стандарт”"
-                                width: "463" height: "473">
+                                width="463" height="308">
                             <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 3-категории -
                                     <br>
@@ -485,7 +485,7 @@
                         <div class="rooms-slider__item">
                             <div class="rooms-slider__pictures">
                                 <img class="rooms-slider__img" src="images/cottage-house.jpg"
-                                    alt="Номер категории “Стандарт”" width: "463" height: "473">
+                                    alt="Номер категории “Стандарт”" width="463" height="347">
                             </div>
                             <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
@@ -520,7 +520,7 @@
 
                         <div class="rooms-slider__item">
                             <img class="rooms-slider__img" src="images/cottage-house.jpg"
-                                alt="Номер категории “Стандарт”" width: "463" height: "473">
+                                alt="Номер категории “Стандарт”" width="463" height="347">
                             <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
                                 <p class="rooms-slider__desc desc-text">
@@ -554,7 +554,7 @@
 
                         <div class="rooms-slider__item">
                             <img class="rooms-slider__img" src="images/cottage-house.jpg"
-                                alt="Номер категории “Стандарт”" width: "463" height: "473">
+                                alt="Номер категории “Стандарт”" width="463" height="347">
                             <div class="rooms-slider__inner">
                                 <h3 class="rooms-slider__title text">Номер 1-категории - “Стандарт”</h3>
                                 <p class="rooms-slider__desc desc-text">
@@ -1028,7 +1028,8 @@
                     <div class="cashback__items">
                         <p class="cashback__number discount">20%</p>
                         <div class="cashback__pictures">
-                            <img class="cashback__img" src="images/mir-card_222x144.png" alt="Карта Мир">
+                            <img class="cashback__img" src="images/mir-card_222x144.png" alt="Карта Мир" width="222"
+                                height="144">
                         </div>
                     </div>
                 </div>
@@ -1045,8 +1046,10 @@
                                 <button class="btn-reset map__btn">Карта офиса</button>
                             </div>
                             <div class="map__picture">
-                                <img class="map__img" src="images/map-base.jpg" alt="Карта базы" width="807"
-                                    height="705">
+                                <!-- <img class="map__img" src="images/map-base.jpg" alt="Карта базы" width="807"
+                                    height="705"> -->
+                                <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUiQYa4OC"
+                                    width="300" height="450" frameborder="1" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
 
@@ -1055,10 +1058,10 @@
 
                             <div class="contacts-info__box contacts-info__box--phone">
                                 <h3 class="contacts-info__subtitle text">Звоните по телефонам:</h3>
-                                <a class="contacts-info__link" href="tel:+7000 1234567">+7 (000) 123-45-67</a>
-                                <a class="contacts-info__link" href="tel:+7000 1234567">+7 (000) 123-45-67</a>
+                                <a class="contacts-info__link" href="tel:+70001234567">+7 (000) 123-45-67</a>
+                                <a class="contacts-info__link" href="tel:+70001234567">+7 (000) 123-45-67</a>
                                 <br>
-                                <a class="contacts-info__link" href="tel:+7000 1234567">+7 (000) 123-45-67</a>
+                                <a class="contacts-info__link" href="tel:+70001234567">+7 (000) 123-45-67</a>
                             </div>
 
                             <div class="contacts-info__box contacts-info__box--mail">
